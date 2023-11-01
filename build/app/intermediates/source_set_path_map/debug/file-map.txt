@@ -1,0 +1,24 @@
+com.example.green.app-jetified-window-1.0.0-beta04-0 C:\Users\HP\.gradle\caches\transforms-3\21a952ff0f918b6065d1e74e960496a6\transformed\jetified-window-1.0.0-beta04\res
+com.example.green.app-core-1.6.0-1 C:\Users\HP\.gradle\caches\transforms-3\586638b87e45f250e22f7c8965a27bda\transformed\core-1.6.0\res
+com.example.green.app-jetified-firebase-common-20.3.3-2 C:\Users\HP\.gradle\caches\transforms-3\5e426facc33c2ce37341b3b7edd9d583\transformed\jetified-firebase-common-20.3.3\res
+com.example.green.app-jetified-window-java-1.0.0-beta04-3 C:\Users\HP\.gradle\caches\transforms-3\6157c9475654030e2cc75902b706654e\transformed\jetified-window-java-1.0.0-beta04\res
+com.example.green.app-jetified-play-services-base-18.0.1-4 C:\Users\HP\.gradle\caches\transforms-3\9440b15045622cada617352f519b4906\transformed\jetified-play-services-base-18.0.1\res
+com.example.green.app-jetified-play-services-basement-18.1.0-5 C:\Users\HP\.gradle\caches\transforms-3\a2a85d4852b50c7eed0f8d0aa0f7f9b1\transformed\jetified-play-services-basement-18.1.0\res
+com.example.green.app-browser-1.4.0-6 C:\Users\HP\.gradle\caches\transforms-3\b5ab6d0f321ecddc3df43335e0da3d6f\transformed\browser-1.4.0\res
+com.example.green.app-jetified-annotation-experimental-1.1.0-7 C:\Users\HP\.gradle\caches\transforms-3\d861697377216656d5b4950af8c91a39\transformed\jetified-annotation-experimental-1.1.0\res
+com.example.green.app-debug-8 D:\Flutter\Flutter Apps\green\green\android\app\src\debug\res
+com.example.green.app-main-9 D:\Flutter\Flutter Apps\green\green\android\app\src\main\res
+com.example.green.app-google-services-10 D:\Flutter\Flutter Apps\green\green\build\app\generated\res\google-services\debug
+com.example.green.app-pngs-11 D:\Flutter\Flutter Apps\green\green\build\app\generated\res\pngs\debug
+com.example.green.app-resValues-12 D:\Flutter\Flutter Apps\green\green\build\app\generated\res\resValues\debug
+com.example.green.app-rs-13 D:\Flutter\Flutter Apps\green\green\build\app\generated\res\rs\debug
+com.example.green.app-mergeDebugResources-14 D:\Flutter\Flutter Apps\green\green\build\app\intermediates\incremental\debug\mergeDebugResources\merged.dir
+com.example.green.app-mergeDebugResources-15 D:\Flutter\Flutter Apps\green\green\build\app\intermediates\incremental\debug\mergeDebugResources\stripped.dir
+com.example.green.app-merged_res-16 D:\Flutter\Flutter Apps\green\green\build\app\intermediates\merged_res\debug
+com.example.green.app-packaged_res-17 D:\Flutter\Flutter Apps\green\green\build\cloud_firestore\intermediates\packaged_res\debug
+com.example.green.app-packaged_res-18 D:\Flutter\Flutter Apps\green\green\build\firebase_auth\intermediates\packaged_res\debug
+com.example.green.app-packaged_res-19 D:\Flutter\Flutter Apps\green\green\build\firebase_core\intermediates\packaged_res\debug
+com.example.green.app-packaged_res-20 D:\Flutter\Flutter Apps\green\green\build\firebase_storage\intermediates\packaged_res\debug
+com.example.green.app-packaged_res-21 D:\Flutter\Flutter Apps\green\green\build\fluttertoast\intermediates\packaged_res\debug
+com.example.green.app-packaged_res-22 D:\Flutter\Flutter Apps\green\green\build\path_provider_android\intermediates\packaged_res\debug
+com.example.green.app-packaged_res-23 D:\Flutter\Flutter Apps\green\green\build\shared_preferences_android\intermediates\packaged_res\debug

@@ -1,13 +1,18 @@
+// Flutter imports:
 import 'package:flutter/material.dart';
-import 'package:green/models/plant_model.dart';
-import 'package:green/modules/plant_details_screen/plant_details_screen.dart';
+
+// Packages imports:
 import 'package:google_fonts/google_fonts.dart';
 
+// project imports:
+import 'package:green/models/plant.dart';
+import '../screens/plant_details/plant_details_screen.dart';
 
-class PlantCard extends StatelessWidget {
+
+class AppPlantCard extends StatelessWidget {
   final PlantModel? plantModel;
 
-  PlantCard({
+  AppPlantCard({
     @required this.plantModel,
   });
   @override
@@ -28,7 +33,7 @@ class PlantCard extends StatelessWidget {
             BoxShadow(
               color: Colors.black.withOpacity(0.6),
               offset: Offset(
-                0.0,
+                6.0,
                 10.0,
               ),
               blurRadius: 10.0,

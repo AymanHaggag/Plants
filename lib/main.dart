@@ -1,37 +1,46 @@
-import 'package:firebase_core/firebase_core.dart';
+//Flutter Imports:
 import 'package:flutter/material.dart';
-import 'package:green/constants/constants.dart';
-import 'package:green/layout/cubit/plants_cubit.dart';
-import 'package:green/layout/cubit/plants_states.dart';
-import 'package:green/layout/home_screen/home_screen.dart';
-import 'package:green/modules/get_started_screen/get_started_screen.dart';
-import 'package:green/modules/login_screen/cubit/user_cubit.dart';
-import 'package:green/modules/login_screen/cubit/user_states.dart';
-import 'package:green/modules/splash_screen/splash_screen.dart';
 
+//Packages Imports:
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:bloc/bloc.dart';
-import 'package:green/tools/bloc_observer/bloc_observer.dart';
-import 'package:green/tools/local_storage_tool/cashe_helper.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
-import 'modules/login_screen/login_screen.dart';
+//Project Imports:
+import 'package:green/constants/constants.dart';
+import 'screens/home/cubit/plants_cubit.dart';
+import 'screens/home/cubit/plants_states.dart';
+import 'screens/home/home_screen.dart';
+import 'screens/sign_in/cubit/user_cubit.dart';
+import 'screens/sign_in/cubit/user_states.dart';
+import 'screens/splash/splash_screen.dart';
+import 'tools/bloc/bloc_observer.dart';
+import 'tools/storage/local/cashe_helper.dart';
+import 'widgets/restart.dart';
+import 'generated/l10n.dart';
 
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  Bloc.observer = MyBlocObserver();
   await Firebase.initializeApp();
   await CacheHelper.init();
-  uId = await CacheHelper.getData(key: "uId").then((value) {
-    print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> uId = $uId");
-  });
+  Bloc.observer = MyBlocObserver();
 
-  Widget openingScreen = SplashScreen();
+  uId = await CacheHelper.getData(key: "uId").whenComplete(() {
+
+    Widget openingScreen = const SplashScreen();
+    if (uId != null){
+      openingScreen = HomeScreen();
+    }
+  });
+  currentLanguage = await CacheHelper.getData(key: "currentLanguage") ?? "en" ;
+
+  Widget openingScreen = const SplashScreen();
   if (uId != null){
     openingScreen = HomeScreen();
   }
 
-  runApp( MyApp(openingScreen: openingScreen,));
+  runApp( AppRestart(child: MyApp(openingScreen: openingScreen,)));
 }
 
 class MyApp extends StatelessWidget {
@@ -50,10 +59,23 @@ class MyApp extends StatelessWidget {
         ),
       ],
       child: MaterialApp(
+
+        locale: Locale(currentLanguage),
+
+        localizationsDelegates: const [
+          S.delegate,
+          GlobalMaterialLocalizations.delegate,
+          GlobalWidgetsLocalizations.delegate,
+          GlobalCupertinoLocalizations.delegate,
+        ],
+        supportedLocales: S.delegate.supportedLocales,
         debugShowCheckedModeBanner: false,
+
         home: openingScreen,
       ),
     );
   }
+
+
 }
 

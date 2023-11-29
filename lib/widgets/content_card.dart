@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:green/models/plant_model.dart';
-import 'package:green/modules/plant_details_screen/plant_details_screen.dart';
 
-class ContentCard extends StatelessWidget {
+
+class AppContentCard extends StatelessWidget {
   final Widget? widget;
   final Color? color;
 
-  ContentCard({
+  AppContentCard({
     @required this.widget,
     @required this.color,
   });
